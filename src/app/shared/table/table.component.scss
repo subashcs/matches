@@ -1,0 +1,16 @@
+.heading {
+  text-transform: uppercase;
+}
+
+table {
+  tr {
+    &:nth-child(2n) {
+      background-color: aliceblue;
+    }
+    td,
+    th {
+      text-align: center;
+      padding: 5px;
+    }
+  }
+}
