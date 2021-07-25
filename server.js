@@ -9,7 +9,9 @@ function requireHTTPS(req, res, next) {
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 8080;
-// app.use(requireHTTPS);
+
+app.use(requireHTTPS);
+
 app.use(express.static("./dist/results"));
 
 app.get("/*", (req, res) =>
