@@ -38,6 +38,7 @@ export class MatchService {
   createMatch({ teamA, teamB, date }: MatchPayload): Match {
     let match = { id: v4(), teamA, teamB, date };
     const matches = [...this.matches.value, match];
+    localStorage.setItem(this.MATCH_STORAGE_KEY, JSON.stringify(matches));
     this.matches.next(matches);
     return match;
   }
@@ -53,6 +54,7 @@ export class MatchService {
       return item;
     });
     this.matches.next(updatedMatches);
+    localStorage.setItem(this.MATCH_STORAGE_KEY, JSON.stringify(matches));
     return isUpdateSuccessful ? match : undefined;
   }
 

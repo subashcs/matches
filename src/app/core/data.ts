@@ -38,6 +38,18 @@ export const matches: Match[] = [
     date: '2017-01-21',
   },
   {
+    id: 'a44458c7-1565-45df-9b20-83cdf27b41170',
+    teamA: {
+      name: 'Germany',
+      score: 3,
+    },
+    teamB: {
+      name: 'India',
+      score: 2,
+    },
+    date: '2011-11-11',
+  },
+  {
     id: 'a44458c7-1565-45df-9b20-83cdf27b4170',
     teamA: {
       name: 'Nepal',
@@ -47,6 +59,6 @@ export const matches: Match[] = [
       name: 'India',
       score: 2,
     },
-    date: '2011/11/11',
+    date: '2011-11-11',
   },
 ];

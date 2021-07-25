@@ -1,3 +1,5 @@
-<p>
-    match detail {{match?.date}}
-</p>
+<div class="match-detail">
+ <div class="teams">
+  <a [routerLink]="routerLinkA">{{match?.teamA?.name}}</a> vs <a [routerLink]="routerLinkB"> {{match?.teamB?.name}}</a>
+ </div>
+</div>

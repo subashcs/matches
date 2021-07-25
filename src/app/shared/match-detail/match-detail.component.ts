@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnChanges } from '@angular/core';
 import { Match } from 'src/app/core';
 
 @Component({
@@ -6,9 +6,19 @@ import { Match } from 'src/app/core';
   templateUrl: './match-detail.component.html',
   styleUrls: ['./match-detail.component.scss'],
 })
-export class MatchDetailComponent {
+export class MatchDetailComponent implements OnChanges {
   @Input()
   match: Match | undefined;
+  routerLinkA: string;
+  routerLinkB: string;
 
-  constructor() {}
+  constructor() {
+    this.routerLinkA = '';
+    this.routerLinkB = '';
+  }
+
+  ngOnChanges() {
+    this.routerLinkA = `result/edit/${this.match?.id}`;
+    this.routerLinkB = `result/edit/${this.match?.id}`;
+  }
 }

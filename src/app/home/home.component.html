@@ -1,6 +1,8 @@
 <div class="container">
+<div *ngFor="let group of matches | groupByPipe" class="group">
+    <span class="date">{{group[0].date}}</span>
+    <match-detail *ngFor ="let match of group" [match] = "match"></match-detail>  
 
-    Results
-<match-detail *ngFor ="let match of matches" [match] = "match"></match-detail>  
+</div>
 
 </div>
