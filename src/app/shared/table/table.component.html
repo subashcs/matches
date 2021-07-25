@@ -1,12 +1,15 @@
-<table class="table">
-    <thead>
-        <tr>
-            <th *ngFor="let key of keys" class="heading">{{ key }}</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let record of records">
-            <td *ngFor="let key of keys">{{ record[key] }}</td>
-        </tr>
-    </tbody>
-</table>
+<div class="table-container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th *ngFor="let key of keys" class="heading" id="key">{{ key }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let record of records">
+                <td *ngFor="let key of keys">{{ record[key] }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+ 

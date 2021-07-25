@@ -1,5 +1,6 @@
 
-
+<div class="container">
+<h3>{{match?.id?"Edit Result":"New Result"}}</h3>
 <form [formGroup]="matchForm" (ngSubmit)="onSubmit()">
     <div class="row">
     <div class="form-group">
@@ -40,3 +41,5 @@
     
     <button  type="submit" class="btn-submit" name="Enter Result" [disabled]="!matchForm.valid || isFormLoading" ><span *ngIf="isFormLoading">loading...</span> <span *ngIf="!isFormLoading">Enter Result </span></button>
 </form>
+
+</div>
