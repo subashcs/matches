@@ -4,7 +4,7 @@ Offline matches result application
 
 # Directory Structure
 
-.
+```
 └── src
     ├── app
     │    ├── core
@@ -46,3 +46,4 @@ Offline matches result application
     ├── tsconfig.json
     └── tsconfig.spec.json
     
+```
