@@ -10,6 +10,9 @@
     "test": "ng test",
     "heroku-postbuild": "ng build DataTable && ng build --prod"
   },
+  "engines": {
+    "node": "v12.20.1"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~12.1.0-",
