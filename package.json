@@ -8,7 +8,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "heroku-postbuild": "ng build DataTable && ng build --prod"
+    "heroku-postbuild": "ng build --prod"
   },
   "engines": {
     "node": "v12.20.1"
@@ -25,7 +25,7 @@
     "@angular/platform-browser": "~12.1.0-",
     "@angular/platform-browser-dynamic": "~12.1.0-",
     "@angular/router": "~12.1.0-",
-    "data-table": "./dist/data-table",
+    "subashcs-data-table": "0.0.1",
     "express": "^4.17.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",

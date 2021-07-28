@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MatchTableComponent } from './match-table.component';
 import { MatchTableRoutingModule } from './match-table-routing.module';
 import { SharedModule } from '../shared/shared.module';
-import { DataTableModule } from 'data-table';
+import { DataTableModule } from 'subashcs-data-table';
 
 @NgModule({
   declarations: [MatchTableComponent],
