@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatchService } from '../core';
+import { GroupByPipePipe } from './group-by-pipe.pipe';
 
 import { HomeComponent } from './home.component';
 
@@ -8,9 +10,9 @@ describe('HomeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HomeComponent ]
-    })
-    .compileComponents();
+      declarations: [HomeComponent, GroupByPipePipe],
+      providers: [MatchService],
+    }).compileComponents();
   });
 
   beforeEach(() => {
