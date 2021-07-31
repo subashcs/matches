@@ -8,6 +8,7 @@ This is a offline frontend application for updating and viewing football matches
 
 - Node
 - NPM / yarn package manager for Node ( we prefer yarn in development mode)
+- Angular CLI
 
 
 ### Up and running locally
