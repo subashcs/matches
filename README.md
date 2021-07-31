@@ -1,6 +1,35 @@
-# Results
+# Offline matches result application
 
-Offline matches result application
+This is a offline frontend application for updating and viewing football matches results.
+
+## Getting started
+
+### Things you’ll need
+
+- Node
+- NPM / yarn package manager for Node ( we prefer yarn in development mode)
+
+
+### Up and running locally
+
+1. Pull the project down and track the develop branch
+2. Make sure to set NPM_TOKEN env variable in the cli in order to access private packages
+3. Run `yarn install && yarn dev`
+
+Once you have done that then you can simply run `yarn dev` every other time to run the project in development mode.
+
+`yarn install` will install all the dependencies needed
+
+`yarn build` generates production version of the client
+
+`yarn watch` generates production build with watch enabled
+
+`yarn start` runs the app in production mode served with express server
+
+`yarn dev` runs the app in development mode with hot-reloading
+
+`yarn test` launches the test runner in the interactive watch mode
+
 
 # Directory Structure
 
