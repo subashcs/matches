@@ -7,8 +7,13 @@ import { Match } from 'src/app/core';
   styleUrls: ['./match-detail.component.scss'],
 })
 export class MatchDetailComponent implements OnChanges {
-  @Input()
-  match: Match | undefined;
+  @Input() match: Match = {
+    id: '',
+    teamA: { name: '', score: 0 },
+    teamB: { name: '', score: 0 },
+    date: '',
+  };
+
   routerLinkA: string = '';
   routerLinkB: string = '';
 

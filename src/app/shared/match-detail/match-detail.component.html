@@ -1,5 +1,5 @@
 <div class="match-detail">
  <div class="teams">
-  <a [routerLink]="routerLinkA">{{match?.teamA?.name}}</a> vs <a [routerLink]="routerLinkB"> {{match?.teamB?.name}}</a>
+  <a [routerLink]="routerLinkA" [ngClass]="{'winner':match.teamA.score > match.teamB.score }">{{match?.teamA?.name}}</a> vs <a [routerLink]="routerLinkB" [ngClass]="{'winner':match.teamA.score < match.teamB.score }"> {{match?.teamB?.name}}</a>
  </div>
 </div>
