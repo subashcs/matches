@@ -7,12 +7,8 @@ import { Match, MatchService } from '../core';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  matches: Match[];
-  matchService: MatchService;
-  constructor(matchService: MatchService) {
-    this.matchService = matchService;
-    this.matches = [];
-  }
+  matches: Match[] = [];
+  constructor(private matchService: MatchService) {}
 
   ngOnInit(): void {
     this.matchService.getMatches().subscribe((val) => {

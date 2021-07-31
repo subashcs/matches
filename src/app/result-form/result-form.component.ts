@@ -15,17 +15,15 @@ import { Match, MatchService } from '../core';
 })
 export class ResultFormComponent implements OnInit {
   matchForm!: FormGroup;
-  match: Match | undefined;
-  isFormLoading: Boolean;
+  match!: Match;
+  isFormLoading: Boolean = false;
 
   constructor(
     private formBuilder: FormBuilder,
     private route: ActivatedRoute,
     private router: Router,
     private matchService: MatchService
-  ) {
-    this.isFormLoading = false;
-  }
+  ) {}
 
   ngOnInit() {
     this.matchForm = this.formBuilder.group({
@@ -42,7 +40,6 @@ export class ResultFormComponent implements OnInit {
         if (match) {
           this.match = match;
           let date = new Date(match.date).toISOString().split('T')[0];
-          console.log(match.date, date);
           this.matchForm.setValue({
             teamAName: match.teamA.name,
             teamAScore: match.teamA.score,
@@ -57,7 +54,6 @@ export class ResultFormComponent implements OnInit {
 
   onSubmit() {
     this.isFormLoading = true;
-    console.log('submitting form', this.matchForm), this.match?.id;
 
     const { teamAName, teamAScore, teamBName, teamBScore, date } =
       this.matchForm.value;

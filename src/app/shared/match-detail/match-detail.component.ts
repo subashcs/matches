@@ -9,13 +9,8 @@ import { Match } from 'src/app/core';
 export class MatchDetailComponent implements OnChanges {
   @Input()
   match: Match | undefined;
-  routerLinkA: string;
-  routerLinkB: string;
-
-  constructor() {
-    this.routerLinkA = '';
-    this.routerLinkB = '';
-  }
+  routerLinkA: string = '';
+  routerLinkB: string = '';
 
   ngOnChanges() {
     this.routerLinkA = `result/edit/${this.match?.id}`;

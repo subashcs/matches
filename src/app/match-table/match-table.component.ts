@@ -7,12 +7,8 @@ import { MatchService, ResultTableData } from '../core';
   styleUrls: ['./match-table.component.scss'],
 })
 export class MatchTableComponent implements OnInit {
-  resultData: ResultTableData[];
-  matchService: MatchService;
-  constructor(matchService: MatchService) {
-    this.matchService = matchService;
-    this.resultData = [];
-  }
+  resultData: ResultTableData[] = [];
+  constructor(private matchService: MatchService) {}
 
   ngOnInit(): void {
     this.resultData = this.matchService.getResultTable();
