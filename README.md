@@ -35,7 +35,27 @@ Once you have done that then you can simply run `yarn dev` every other time to r
 # Directory Structure
 
 ```
-└── src
+└── projects
+    |   └── data-table
+    |        ├── src
+    |        |     ├── lib
+    |        |     |     ├── data-table.component.html
+    |        |     |     ├── data-table.component.scss  
+    |        |     |     ├── data-table.component.spec.ts  
+    |        |     |     ├── data-table.component.ts  
+    |        |     |     └── data-table.module.ts
+    |        |     ├── public-api.ts
+    |        |     └── test.ts
+    |        |   
+    |        ├── karma.conf.js
+    |        ├── ng-package.json
+    |        ├── package.json
+    |        ├── README.md   
+    |        ├── tsconfig.lib.json  
+    |        ├── tsconfig.lib.prod.json     
+    |        └── tsconfig.spec.json  
+    |   
+    src
     ├── app
     │    ├── core
     │    │   ├── services
@@ -53,8 +73,6 @@ Once you have done that then you can simply run `yarn dev` every other time to r
     │    ├── result-form      
     │    └── match-table      
     │           
-    │
-    │
     │
     ├── assets
     ├── environments
