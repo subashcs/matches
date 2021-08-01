@@ -66,13 +66,11 @@ Once you have done that then you can simply run `yarn dev` every other time to r
     │    ├── shared
     │    │    ├── match-detail
     │    │    ├── table
-    │    │    └── share.module.ts
-    │    │      
-    │    ├── home       
-    │    ├── match-table     
+    │    │    └── shared.module.ts
+    │    │ 
+    │    ├── home           
     │    ├── result-form      
     │    └── match-table      
-    │           
     │
     ├── assets
     ├── environments
