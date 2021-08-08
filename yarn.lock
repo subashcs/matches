@@ -7253,10 +7253,10 @@ stylus@0.54.8, stylus@^0.54.8:
     semver "^6.3.0"
     source-map "^0.7.3"
 
-subashcs-data-table@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/subashcs-data-table/-/subashcs-data-table-0.0.1.tgz#efa020d7d5a205f167fd7bce8d753e04c63ee909"
-  integrity sha512-z5ED7nsrpS2nMVMPzihbGpPLq6XZJfMpWT0Maz9vQeB5/wgo+8QNJdjiUeTeZJdPbf0hgpsaOCpZ4/3VlbmtNQ==
+subashcs-data-table@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/subashcs-data-table/-/subashcs-data-table-0.0.2.tgz#aedeaa5a7bb5f71acd534e1ed5f7bbdac000a9ae"
+  integrity sha512-eIcfE1OiQ75O3/HG9/vTFbu34ASk7R0di0k1rZQYIgJkdFRzl8g65bH0egm5eWaYc7F36bOsJHcPa0X+cGmPvA==
   dependencies:
     tslib "^2.2.0"
 
