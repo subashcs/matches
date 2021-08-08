@@ -8,6 +8,10 @@ import { Component, Input, OnChanges } from '@angular/core';
 export class DataTableComponent implements OnChanges {
   @Input()
   records: any[];
+
+  @Input()
+  hideSN!: boolean;
+
   @Input()
   caption!: string;
 

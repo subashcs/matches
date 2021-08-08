@@ -2,11 +2,14 @@
     <table class="table">
         <thead>
             <tr>
+                <th *ngIf="!hideSN" id="sn">SN</th>
                 <th *ngFor="let key of keys" class="heading" id="key">{{ key }}</th>
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let record of records">
+            <tr *ngFor="let record of records; let i = index">
+                <td *ngIf="!hideSN" [id]="i">{{i+1}}</td>
+
                 <td *ngFor="let key of keys">{{ record[key] }}</td>
             </tr>
         </tbody>
